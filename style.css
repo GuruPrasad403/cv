@@ -1,0 +1,290 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    opacity: 1;
+    background-color: #ffffff00;
+}
+
+/******** Header Design ********/
+.header, .header .links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.header .name, .header .links {
+    margin: 2em;
+}
+
+.header .links i {
+    margin: 1em;
+}
+
+/***** Image and Intro ********/
+.conent-container {
+    opacity: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    box-shadow: 0px 0 0 4px #000, 0px 0 0 4px #000;
+    background-color: #ffffff;
+    margin: 2em;
+    padding: 1em;
+    border-radius: 20px;
+}
+
+.conent-container .imgname,
+.conent-container .imgname .headdata {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 2em;
+}
+.imgname{
+    padding: 5em;
+}
+.btn{
+    padding: 1em;
+    margin: 2em;
+}
+.headdata h3 {
+    margin: 0.5em;
+}
+.conent-container .imgname .headdata{
+    flex-direction: column;
+}
+.conent-container .imgname, .abt-container,.skill, .work{
+    border-bottom: 1px #726f6f solid;
+    
+}
+.conent-container .imgname .headdata div *,
+.conent-container .imgname .headdata h4 {
+    margin: 1em;
+}
+
+.imgname .headdata  .btn [download],
+.imgname .headdata  .btn a {
+    background-color: #e0e3e4;
+    padding: 8px;
+    text-decoration: none;
+    color: #726f6f;
+    border-radius: 10%;
+}
+
+.imgname .headdata  .btn a {
+    background-color: rgb(53, 197, 111);
+    color: #000;
+    /* margin-top: 50em; */
+}
+
+.imgname img {
+    margin-right: 2em;
+    border: 10px #b6b6b6 solid;
+}
+
+
+
+/********** About me ********/
+.abt-container,.abt-container .p-data {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+}
+.abt-container .abt * {
+    padding: 1em;
+    text-align: justify;
+}
+.abt-container .p-data *{
+    padding: 0.5em;
+}
+ .p-data{
+    margin-top: 2em;
+}
+.skill .name{
+    margin: 2em;
+}
+
+.skill{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.skill .icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items:center;
+    padding: 1em;
+    /* margin-top: 2em; */
+}
+.skill .icons .data i{
+    font-size: 3em;
+}
+.skill .icons .data h3{
+    font-weight: 300;
+    margin: 0.5em;
+}
+.work-flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    margin: 2.5em;
+}
+.w-body{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: space-around;
+    box-shadow: 0 0 0 2px;
+    width: fit-content;
+    margin: 3em;
+    padding: 2em;
+    border-radius: 25% 2% 25% 2%;
+}
+.w-head, .points{
+    margin: 1em;
+}
+.w-head .date span{
+    margin-left: 2em;
+    padding: 0.5em;
+    opacity: 0.3;
+}
+.w-head  a{
+    text-decoration: none;
+    color: #000;
+}
+
+.c-body{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.c-body i{
+    font-size: 2em;
+}
+a i:hover{
+    color: #1db1c4;
+}
+
+
+
+
+
+/* Responsive Design */
+@media only screen and (max-width: 768px) {
+    .conent-container{
+        margin: 0.3em;
+        padding: 0em;
+    }
+    .btn{
+        margin: 0;
+        padding: 0;
+    }
+    .header{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header .links {
+        margin: 1em 0;
+    }
+
+    .header .links i {
+        margin: 0.5em;
+    }
+
+    .conent-container .imgname,
+    .conent-container .imgname .headdata {
+        flex-direction: column;
+        align-items: center; /* Center the items in the column */
+        margin: 1em;
+        text-align: center;
+    }
+
+    .imgname img {
+        margin-right: 0;
+    }
+
+    .imgname {
+        font-size: 18px; /* Adjust the font size for better visibility on smaller screens */
+        padding: 0.5em;
+    }
+
+    .conent-container .imgname .headdata div {
+        margin: 0.5em 0; /* Adjust the margin for better spacing between buttons */
+    }
+    .imgname .headdata .btn a{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        margin: 1;
+    }
+    .abt-container {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5px;
+    }
+    .abt-container .p-data{
+        padding: 0.2em;
+        font-size: 18px;
+    }
+    .p-data {
+        margin-top: 0; /* Remove margin on the top for larger screens */
+    }
+    .icons{
+        flex-direction: column;
+        justify-content: space-evenly;
+        flex-wrap: nowrap;
+        /* align-items:center; */
+    }
+    .data i{
+        font-size: 2em;
+        padding: 0.2em;
+    }
+    .data h3{
+        font-size: 1em;
+    }
+    .w-body{
+        margin: 0.1em;
+        padding: 0.1em;
+        border-radius: 15% 1% 15% 1%;
+        box-shadow: 0 0 0 1px #000;
+    }
+    .work-flex h1{
+        align-items: flex-start;
+        font-size: 1.8em;
+        margin-bottom: 1.5em;
+    } 
+    .work-flex .w-body .w-head h2{
+        font-weight: 300;
+        font-size: 25px;
+    }
+    .date span{
+        margin-left: 1px;
+        font-size: 18px;
+    }
+    .points{
+        padding: 0.5em;
+    }
+    .points ul li{
+        line-height: 2;
+        list-style-type:armenian;
+    }
+
+}
+
+
+
